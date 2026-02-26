@@ -1,3 +1,7 @@
+import icecreamBuilder from '@/views/icecreamBuilder.vue'
+
+
+
 import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
 
@@ -10,9 +14,24 @@ const router = createRouter({
       component: HomeView,
     },
     {
-      path: '/about',
-      name: 'about',
-      component: () => import('../views/AboutView.vue'),
+      path: '/icecreamBuilder',
+      name: 'icecreamBuilder',
+      component: () => import('../views/icecreamBuilder.vue'),
+    },
+    {
+      path: '/icecreamCard',
+      name: 'icecreamCard',
+      component: () => import('../views/icecreamCard.vue'),
+    },
+{
+      path: '/flavorSelector',
+      name: 'flavorSelector',
+      component: () => import('../views/flavorSelector.vue'),
+    },
+    {
+      path: '/toppingSelector',
+      name: 'flavorSelector',
+      component: () => import('../views/flavorSelector.vue'),
     },
   ],
 })
