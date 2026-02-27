@@ -8,6 +8,45 @@ const icecream= ref("")
     </div>
 </template>
 
+
+
+
+
+<template>
+    <div>
+<script setup>
+
+    <h2>{{ iceCream.flavor }}</h2>
+
+    <img :src="iceCream.image" />
+
+   <p>Toppings: {{ iceCream.toppings }}</p>
+  <
+
+</script>
+
+    </div>
+</template>
+
+<script>
+export default {
+    setup () {
+        
+defineProps({
+  iceCream: {
+    type: Object,
+    required: true
+  }
+})
+        return {}
+    }
+}
+</script>
+
+<style lang= scoped>
+
+</style>
+
 <script setup>
 
 </script>
@@ -15,3 +54,4 @@ const icecream= ref("")
 <style lang= scoped>
 
 </style>
+
