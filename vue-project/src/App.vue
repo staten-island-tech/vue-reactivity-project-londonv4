@@ -1,5 +1,4 @@
 
-
 <template>
   <div>
 <h1> Ice Cream Maker</h1>
@@ -29,3 +28,4 @@ import icecreamCard from './components/icecreamCard.vue'
 <style lang= scoped>
 
 </style>
+

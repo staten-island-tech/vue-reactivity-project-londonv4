@@ -1,28 +1,15 @@
 <template>
     <div>
-<h2>{{ icecream.flavour }}</h2>
-const selectedFlavor= ref("")
-const selectedTopping= ref("")
-const icecream= ref("")
-
-    </div>
-</template>
-
-
-
-
-
-<template>
-    <div>
-<script setup>
-
-    <h2>{{ iceCream.flavor }}</h2>
+        <h2>{{ iceCream.flavor }}</h2>
 
     <img :src="iceCream.image" />
 
-   <p>Toppings: {{ iceCream.toppings }}</p>
+   <h1>Toppings: {{ iceCream.toppings }}</h1>
   <
 
+<script setup>
+
+    
 </script>
 
     </div>
