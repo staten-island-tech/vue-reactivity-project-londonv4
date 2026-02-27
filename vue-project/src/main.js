@@ -1,3 +1,5 @@
+
+import icecreamBuilder from '@/views/icecreamBuilder.vue'
 import './assets/main.css'
 
 import { createApp } from 'vue'
