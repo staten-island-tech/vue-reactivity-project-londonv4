@@ -1,3 +1,4 @@
+import { ref } from 'vue'
 <template>
     <div>
         <h2>{{ iceCream.flavor }}</h2>
