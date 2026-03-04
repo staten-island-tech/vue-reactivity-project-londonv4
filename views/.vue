@@ -1,7 +1,10 @@
 <template>
     <div>
-icecreamCard v-for="icecream in icecreams" :key="icecream.id">
+const icecreamCard= ref
+
+<li>v-for="icecream in icecreams" :key="icecream.id">
   {{ icecream }}
+</li> 
     </div>
 </template>
 
@@ -13,7 +16,7 @@ const icecreams = ref([
   { id: 2, flavor: 'Strawberry', price: 3.99 },
   { id: 3, flavor: 'Mint', price: 3.99 },
 
-]
+])
 
 </script>
 
