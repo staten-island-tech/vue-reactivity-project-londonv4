@@ -1,24 +1,22 @@
 import { ref } from 'vue'
 <template>
     <div>
-        <h2>{{ iceCream.flavor }}</h2>
+        <h2>{{ icecream.flavor }}</h2>
 
-    <img :src="iceCream.image" />
+    <img :src="icecream.image" />
 
-   <h1>Toppings: {{ iceCream.toppings }}</h1>
+   <h1>Toppings: {{ icecream.toppings }}</h1>
   <
 
-<script setup>
-
-    
-</script>
-
     </div>
-</template>
 
-<script>
+<script setup>
 export default {
-    setup () {
+  props: ['title'],
+  setup(props) {
+    console.log(props.title)
+  }
+}
         
 defineProps({
   iceCream: {
@@ -26,20 +24,18 @@ defineProps({
     required: true
   }
 })
+
+
+
+
+
+
         return {}
-    }
+  
+</script>
+</template>
+<style lang= scoped>
+div {
+    display: flex;
 }
-</script>
-
-<style lang= scoped>
-
 </style>
-
-<script setup>
-
-</script>
-
-<style lang= scoped>
-
-</style>
-
