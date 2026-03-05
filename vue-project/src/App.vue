@@ -19,13 +19,22 @@ icecreamCard <div v-for="icecream in icecreams" :key="icecream.id">
   </div>
 </template>
 
-<script setup>
-import {ref} from 'vue'
-import icecreamCard from './components/icecreamCard.vue'
 
+
+<script setup>
+import {ref} from '"vue"
+import icecreamCard from '"./components/icecreamCard.vue"
+const scoop = ([ref])
+function addScoop(flavor){
+  scoops.push(flavor)
+}
 </script>
+<template>
+  <div>
+    <h1>Icecream Builder</h1>
+  </div>
+</template>
 
 <style lang= scoped>
 
 </style>
-

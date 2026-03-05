@@ -1,18 +1,14 @@
 import icecreamBuilder from '@/views/icecreamBuilder.vue'
 
+import { createApp } from 'vue'
+import App from './App.vue'
+import router from './router'
 
-
-import { createRouter, createWebHistory } from 'vue-router'
-import HomeView from '../views/HomeView.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
-    {
-      path: '/',
-      name: 'home',
-      component: HomeView,
-    },
+   
     {
       path: '/icecreamBuilder',
       name: 'icecreamBuilder',
@@ -37,6 +33,7 @@ const router = createRouter({
 })
 
 export default router
+
 
 // example from notes
 // import { createRouter, createWebHistory } from 'vue-router'
