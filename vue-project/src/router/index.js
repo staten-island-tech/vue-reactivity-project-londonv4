@@ -1,57 +1,32 @@
+import { createRouter, createWebHistory } from 'vue-router'
 import icecreamBuilder from '@/views/icecreamBuilder.vue'
+import icecreamCard from '@/views/icecreamCard.vue'
+import icecreamCone from '@/views/icecreamCone.vue'
 
-import { createApp } from 'vue'
-import App from './App.vue'
-import router from './router'
-
-
+const routes = [
+  {
+    path: '/icecreamBuilder',
+    name: 'icecreamBuilder',
+    component: icecreamBuilder,
+  },
+  {
+    path: '/icecreamCard',
+    name: 'icecreamCard',
+    component: icecreamCard,
+  },
+  {
+    path: '/icecreamCone',
+    name: 'IcecreamCone',
+    component: icecreamCone,
+  },
+  {
+    path: '/', 
+    redirect: '/icecreamBuilder',
+  },
+]
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
-  routes: [
-   
-    {
-      path: '/icecreamBuilder',
-      name: 'icecreamBuilder',
-      component: () => import('../views/icecreamBuilder.vue'),
-    },
-    {
-      path: '/icecreamCard',
-      name: 'icecreamCard',
-      component: () => import('../views/icecreamCard.vue'),
-    },
-{
-      path: '/flavorSelector',
-      name: 'flavorSelector',
-      component: () => import('../views/flavorSelector.vue'),
-    },
-    {
-      path: '/toppingSelector',
-      name: 'flavorSelector',
-      component: () => import('../views/flavorSelector.vue'),
-    },
-  ],
+  routes,
 })
 
 export default router
-
-
-// example from notes
-// import { createRouter, createWebHistory } from 'vue-router'
-// import ViewLists from '@/views/ViewLists.vue'
-
-
-// const router = createRouter({
-//   history: createWebHistory(import.meta.env.BASE_URL),
-//   routes: [
-
-//      {
-//       path: '/view-lists',
-//       name: 'view-lists',
-//       component: ViewLists,
-//     },
-    
-//   ],
-// })
-
-// export default router
-
