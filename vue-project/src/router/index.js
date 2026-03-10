@@ -4,7 +4,7 @@ import IcecreamBuilder from '@/views/IcecreamBuilder.vue'
 
 const routes = [
   {
-    path: '/icecream-builder',
+    path: '/Icecream-builder',
     name: 'IcecreamBuilder',
     component: IcecreamBuilder,
   },
