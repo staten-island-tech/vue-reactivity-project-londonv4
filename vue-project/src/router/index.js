@@ -1,28 +1,18 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import icecreamBuilder from '@/views/icecreamBuilder.vue'
-import icecreamCard from '@/views/icecreamCard.vue'
-import icecreamCone from '@/views/icecreamCone.vue'
+import IcecreamBuilder from '@/views/IcecreamBuilder.vue'
+
 
 const routes = [
   {
-    path: '/icecreamBuilder',
-    name: 'icecreamBuilder',
-    component: icecreamBuilder,
+    path: '/icecream-builder',
+    name: 'IcecreamBuilder',
+    component: IcecreamBuilder,
   },
   {
-    path: '/icecreamCard',
-    name: 'icecreamCard',
-    component: icecreamCard,
-  },
-  {
-    path: '/icecreamCone',
-    name: 'IcecreamCone',
-    component: icecreamCone,
-  },
-  {
-    path: '/', 
-    redirect: '/icecreamBuilder',
-  },
+    path: '/',
+    redirect: '/icecream-builder'
+  }
+  
 ]
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
